@@ -11,7 +11,7 @@ RUN /var/lang/bin/python3.8 -m pip install --upgrade pip
 RUN git clone https://github.com/markcha-ops/fbprophet-lambda.git
 
 # install packages
-RUN pip install -r requirements.txt
+RUN pip install -r fbprophet-lambda/requirements.txt
 # git repository 의 lambda_function.py 를 Container 내부의 /var/task/ 로 이동
 RUN cp fbprophet-lambda/lambda_function.py /var/task/
 
