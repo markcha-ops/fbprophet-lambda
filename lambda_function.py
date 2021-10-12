@@ -1,6 +1,6 @@
 import json
-import boto3
-client = boto3.client('iot-data')
+# import boto3
+# client = boto3.client('iot-data')
 
 
 def handler(event, context):
